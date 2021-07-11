@@ -6,33 +6,35 @@ public class Main_Aplicacao
 {
 
 	public static void main(String[] args) 
-	
 	{
+
+		System.out.println( "CONVERSÃO DE INTEIRO PARA BINÁRIO \n" );
 		
-		System.out.println( "****************************" );
-		System.out.println( " INTEIRO PARA BINÁRIO \n" );
-		
+		// Entrada dos valores:
+		Scanner entrada = new Scanner( System.in ); 
 		System.out.println( " >Digite o primeiro número: " );
 		
-		Scanner entrada = new Scanner( System.in ); 
-		
-		int N1;
-		N1 = entrada.nextInt();
+		int primeiroNumeroEntrada;
+		primeiroNumeroEntrada = entrada.nextInt();
 		
 		System.out.println( " >Digite o segundo número: " );
 		
-		int N2;
-		N2 = entrada.nextInt();
+		int segundoNumeroEntrada;
+		segundoNumeroEntrada = entrada.nextInt();
 		
-		Integer numero1 = N1;
-		Integer numero2 = N2;
-		
-		System.out.println("\n" + numero1 + " = " + Integer.toBinaryString(numero1) + " em biná"
-				+ "rio.");
-		System.out.println( numero2 + " = " + Integer.toBinaryString(numero2) + " em binário.");
-		System.out.println( "---------------------------" );
+		Integer primeiroNumeroBinario = primeiroNumeroEntrada 
+		Integer segundoNumeroBinario = segundoNumeroEntrada 
+		// Ao compatibilizar valores int para a classe empacotadora Integer
+		// permite-se usar funções especiais.
+
+		// Saída dos valores:
+		System.out.println("\n" + primeiroNumeroBinario + " = "
+				   + Integer.toBinaryString(primeiroNumeroBinario)
+				   + " em binário.");
+
+		System.out.println( segundoNumeroBinario + " = " 
+				   + Integer.toBinaryString(segundoNumeroBinario)
+				   + " em binário.");
 
 	}
-
-	
 }
